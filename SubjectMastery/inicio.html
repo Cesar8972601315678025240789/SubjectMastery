@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SubjectMastery</title>
+    <link rel="icon" type="image/x-icon" href="Hack4edu-SubjectMastery(Alumno)/favicon.ico">
+    <link rel="stylesheet" href="./Hack4edu-SubjectMastery(Alumno)/estilos.css">
+</head>
+
+<body>
+    <header>
+        <div class="nombre-y-logo">
+            <img src="./Hack4edu-SubjectMastery(Alumno)/img/sm.png" alt="Logo">
+            <h1>SubjectMastery</h1>
+        </div>
+        <div class="profile">
+            <div id="stats">
+                <button id="stat">Iniciar sesion</button>
+            </div>
+            <div>
+                <img id="perfil-desplegable" src="./Hack4edu-SubjectMastery(Alumno)/img/user.png" alt="User">
+                <div id="desplegable">
+                    <div class="desplegable-content">
+                        <a>Usuario</a>
+                        <a>----------------</a>
+                        <a id="mrc" href="#">Not sesion</a>
+                    </div>     
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <h2 id="Var">Perfiles</h2>
+        <p><br></p>
+        <div id="asig">
+            <a href="./Hack4edu-SubjectMastery(Alumno)/index.html"> 
+                <button id="alum"  type="submit">Alumno</button>
+            </a>
+            <p><br></p>
+            <p><br></p>
+            <a href="./Hack4edu-SubjectMastery(Profesor)/inicio.html"> 
+                <button id="prof"  type="submit">Profesor</button>
+            </a>
+        </div>
+        
+    </main>
+    <script>
+        const imagenDesplegable = document.getElementById("perfil-desplegable");
+            const desplegable = document.getElementById("desplegable");
+            imagenDesplegable.addEventListener("click", function() {
+                if (desplegable.style.display === "none" || desplegable.style.display === "") {
+                    desplegable.style.display = "block";
+                } else {
+                    desplegable.style.display = "none";
+                }
+            });
+    </script>
+</body>
+
+<footer>
+    <p>© 2023 Subject Mastery. Made in Salamanca.</p>
+</footer>
+</html>

@@ -1,0 +1,182 @@
+* {
+    margin: 0cm;
+    font-size: 20px;
+}
+
+@font-face {
+    font-family:'TipoLetra';
+    src: url('./Red_Hat_Display/') format('truetype');
+}
+
+body{
+    background-color: #f5f5f5;
+}
+
+nav {
+    line-height: 26px;
+    position: relative;
+    bottom: 50px;
+    margin-top: 50px;
+    text-align: right;
+    padding-right: 5%;
+}
+    
+header {
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nombre-y-logo{
+    display: flex;
+    align-items: center;
+}
+
+.nombre-y-logo img {
+    width: 150px;
+    margin-right: 50px;
+    margin-left: 20px;
+}
+
+header h1 {
+    font-size: 50px;
+    color: aliceblue;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+    margin-left: 20px;
+}
+
+.profile a {
+    margin-right: 10px;
+    color: aqua;
+    font-size: medium;
+}
+
+.profile img {
+    width: 70px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+#perfil-desplegable{
+    cursor: pointer;
+}
+
+#desplegable {
+    display: none;
+    background-color: whitesmoke;
+    width: 120px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+}
+
+.desplegable-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+}
+
+.desplegable-content a {
+    color: black;
+    text-align: center;
+    
+}
+
+#links {
+    position: absolute;
+    bottom: 130px;
+}
+
+#Nombre {
+    color: aliceblue;
+    padding-top: 40px;
+    margin-left: -600px;
+}
+
+#stat {
+    color: aliceblue;
+    margin-right: 20px;
+    background-color: black;
+}
+
+body h2{
+    margin: 40px;
+    font-size: 40px;
+}
+
+#asig {
+    text-align: center;
+}
+
+body p{
+    font-size: 25px;
+    margin-left: 40px;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    margin-bottom: 0px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+footer p {
+    padding: 30px;
+}
+
+#cuenta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+#cuenta button {
+    margin: 50px;
+    padding: 10px;
+}
+
+#asig button {
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+}
+
+#cuenta #operacion {
+    margin-left: 20px;
+    margin-top: 10px;
+    width: fit-content;
+}
+
+#cuenta #resultado {
+    margin: 20px;
+}
+
+#cuenta #cuenta2 {
+    display: flex;
+    flex-direction: row;
+}
+
+#cuenta #cuenta2 #igual{
+    margin-top: 10px;
+}
+
+#mrc {
+    color: blue;
+}

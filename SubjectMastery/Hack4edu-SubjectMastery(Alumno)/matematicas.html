@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocumentM</title>
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+
+<body>
+    <header>
+        <div class="nombre-y-logo">
+            <img src="./img/sm.png" alt="Logo">
+            <h1>SubjectMastery</h1>
+        </div>
+        <div class="profile">
+            <a href="./index.html"> 
+                <button id="stat">Volver</button>
+            </a>
+            <div>
+                <img id="perfil-desplegable" src="./img/user.png" alt="User">
+                <div id="desplegable">
+                    <div class="desplegable-content">
+                        <a>Victor Moreno de Dios</a>
+                        <a>----------------</a>
+                        <a href="#">Alumno</a>   
+                    </div>     
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <h2 id="mat">Matemáticas</h2>
+        <div id="cuenta">
+            <div id="cuenta2">
+                <p id="operacion"></p>
+                <p id="igual"> = </p>
+                <input id="resultado" type="number">
+            </div>
+            <button id="resolver">Resolver</button>
+            <p id="correccion"></p>
+        </div>
+        
+    </main>
+    <script>
+        const imagenDesplegable = document.getElementById("perfil-desplegable");
+            const desplegable = document.getElementById("desplegable");
+            imagenDesplegable.addEventListener("click", function() {
+                if (desplegable.style.display === "none" || desplegable.style.display === "") {
+                    desplegable.style.display = "block";
+                } else {
+                    desplegable.style.display = "none";
+                }
+            });
+    </script>
+    <script src="./main.js"></script>
+</body>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SubjectMastery</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="./CSS/estilos.css">
+</head>
+
+<body>
+    <header>
+        <div class="nombre-y-logo">
+            <img src="./img/sm.png" alt="Logo">
+            <h1>SubjectMastery</h1>
+        </div>
+        <div class="profile">
+            <a href="../inicio.html"> 
+                <button id="stat" type="submit">Volver</button>
+            </a>
+            <div>
+                <img id="perfil-desplegable" src="./img/user.png" alt="User">
+                <div id="desplegable">
+                    <div class="desplegable-content">
+                        <a>César Martín Cuadrado</a>
+                        <a>----------------</a>
+                        <a href="#">Profesor</a>   
+                    </div>     
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h2 class="bb">
+            <div class="indice">
+                Indice
+                <div class="contenido-indice">
+                    <div class="inicio">
+                        <button class="dropdown3-btn">⇨ Inicio</button>
+                    </div>
+                    <div class="cursos">
+                        <button class="dropdown-btn">⇨ Cursos</button>
+                        <div class="dropdown-content">
+                            <div class="submenu">
+                                <a href="curso1.html">
+                                    <button class="submenu-btn">⇨ Curso 1</button>
+                                    <div class="submenu-content">
+                                        <a href="#">Boletín</a>
+                                        <a href="#">Estadísticas generales</a>
+                                    </div> 
+                                </a>
+                            </div>
+                            <div class="submenu">
+                                <a href="curso2.html">
+                                    <button class="submenu-btn">⇨ Curso 2</button>
+                                    <div class="submenu-content">
+                                        <a href="#">Boletín</a>
+                                        <a href="#">Estadísticas generales</a>
+                                    </div> 
+                                </a>
+                            </div>
+                            <div class="submenu">
+                                <a href="curso3.html">
+                                    <button class="submenu-btn">⇨ Curso 3</button>
+                                    <div class="submenu-content">
+                                        <a href="#">Boletín</a>
+                                        <a href="#">Estadísticas generales</a>
+                                    </div> 
+                                </a>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="alumnos">
+                        <button class="dropdown2-btn">⇨ Alumnos</button>
+                        <div class="dropdown2-content">
+                            <a href="#">Buscador alumnos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contenido">
+                <h3>Bienvenido a la sesión de profesor</h3>
+            </div>
+        </h2>
+    </main>
+    <footer>
+        <p>© 2023 SubjectMastery. Made in Salamanca.</p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var dropdownBtns = document.querySelectorAll(".dropdown-btn");
+            dropdownBtns.forEach(function(dropdownBtn) {
+                dropdownBtn.addEventListener("click", function() {
+                    var dropdownContent = this.nextElementSibling;
+                    dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
+                });
+            });
+            var submenuBtns = document.querySelectorAll(".submenu-btn");
+            submenuBtns.forEach(function(submenuBtn) {
+                submenuBtn.addEventListener("click", function() {
+                    var submenuContent = this.nextElementSibling;
+                    submenuContent.style.display = submenuContent.style.display === "block" ? "none" : "block";
+                });
+            });
+            var dropdownBtns2 = document.querySelectorAll(".dropdown2-btn");
+            dropdownBtns2.forEach(function(dropdownBtn2) {
+                dropdownBtn2.addEventListener("click", function() {
+                    var dropdownContent2 = this.nextElementSibling;
+                    dropdownContent2.style.display = dropdownContent2.style.display === "block" ? "none" : "block";
+                });
+            });
+            const imagenDesplegable = document.getElementById("perfil-desplegable");
+            const desplegable = document.getElementById("desplegable");
+            imagenDesplegable.addEventListener("click", function() {
+                if (desplegable.style.display === "none" || desplegable.style.display === "") {
+                    desplegable.style.display = "block";
+                } else {
+                    desplegable.style.display = "none";
+                }
+            });
+        });
+        
+    </script>
+</body>
+
+</html>

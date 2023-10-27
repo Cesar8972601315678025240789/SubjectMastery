@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SubjectMastery</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+
+<body>
+    <header>
+        <div class="nombre-y-logo">
+            <img src="./img/sm.png" alt="Logo">
+            <h1>SubjectMastery</h1>
+        </div>
+        <div class="profile">
+            <div id="stats">
+                <a href="../inicio.html"> 
+                    <button id="stat" type="submit">Volver</button>
+                </a>
+            </div>
+            <div>
+                <img id="perfil-desplegable" src="./img/user.png" alt="User">
+                <div id="desplegable">
+                    <div class="desplegable-content">
+                        <a>Victor Moreno de Dios</a>
+                        <a>----------------</a>
+                        <a href="#">Alumno</a>   
+                    </div>     
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <h2 id="Var">Asignaturas</h2>
+        <div id="asig">
+            <a href="./matematicas.html"> 
+                <button id="matematicas"  type="submit">Matemáticas</button>
+            </a>
+            <p><br></p>
+            <button id="biologia">Biologia</button>
+            <p><br></p>
+            <button id="lenguage" type="submit">Lenguage</button>
+        </div>
+        <div id="links">
+            <h2 id="Links"><br><br> Links para refuerzos académicos</h2>
+            <p>Mejora en matemáticas <a href="https://www.youtube.com/@unicoos">link</a></p>
+            <p>Mejora en biologia <a href="google.es">link</a></p>
+            <p>Mejora en lenguage <a href="https://www.youtube.com/@JavierLengua">link</a></p>
+        </div>
+        
+    </main>
+    <script>
+        const imagenDesplegable = document.getElementById("perfil-desplegable");
+            const desplegable = document.getElementById("desplegable");
+            imagenDesplegable.addEventListener("click", function() {
+                if (desplegable.style.display === "none" || desplegable.style.display === "") {
+                    desplegable.style.display = "block";
+                } else {
+                    desplegable.style.display = "none";
+                }
+            });
+    </script>
+</body>
+
+<footer>
+    <p>© 2023 Subject Mastery. Made in Salamanca.</p>
+</footer>
+</html>
